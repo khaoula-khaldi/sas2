@@ -2,16 +2,17 @@
 #include <stdio.h>
 
 int main() {
-    float t;
-    printf ("veuillez entrez la temperateur en celusious:");
-    scanf("%f",&t);
-    if(t<0){
-        printf("solide : ");
-    }else if (0<=t && t<100){
-        printf("liquide :");
+    float c;
+    printf("entrez la temperateur en celusious :");
+    scanf("%f",&c);
+    if (c<0){
+       printf(" l etat est solide ");
+    }else if (0<=c && c<100){
+       printf ("l etat est liquide ");
     }else{
-        printf(" gaze");
+       printf("l etat est gaz ");a
     }
 
     return 0;
 }
+
