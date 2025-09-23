@@ -1,6 +1,5 @@
 // challenge 6
 #include <stdio.h>
-
 int main() {
     int a , b ;
     float s,p,S,D;
