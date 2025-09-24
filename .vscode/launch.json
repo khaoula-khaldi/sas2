@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/youco/OneDrive/Desktop/sas2/day1/variables",
-      "program": "c:/Users/youco/OneDrive/Desktop/sas2/day1/variables/build/Debug/outDebug",
+      "cwd": "c:/Users/youco/OneDrive/Desktop/sas2/day2/tableaux",
+      "program": "c:/Users/youco/OneDrive/Desktop/sas2/day2/tableaux/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

@@ -1,0 +1,170 @@
+// challenge 1
+#include <stdio.h>
+int main() {
+    int tab[]={};
+    int n,i;
+    printf("entres lindice de ce tab :");
+    scanf("%d",&n);
+    for (i=0;i<n;i++){
+        printf (" entres les elment de tab : ");
+        scanf("%d",&tab);
+    }
+    printf (" fin de programme");
+return 0;
+}
+
+// challenge 3
+#include <stdio.h>
+
+int main() {
+    int tab[]={};
+    int n,i;
+    int s=0;
+    printf("entres le nombre des element  :");
+    scanf("%d",&n);
+    for (i=0;i<n;i++){
+        printf (" entres les elment de tab : ");
+        scanf("%d",&tab[i]);
+        s=s+tab[i];
+    }
+    printf("la somme est %d :",s);
+
+    printf (" fin de programme");
+    return 0;
+}
+
+// challenge 2
+#include <stdio.h>
+
+int main() {
+    
+    int n,i;
+    printf("entres le nombre des element  :");
+    scanf("%d",&n);
+    int tab[n];
+    for (i=0;i<n;i++){
+        printf (" entres les elment de tab : ");
+        scanf("%d",&tab[i]);
+    }
+    printf (" fin de programme");
+    return 0;
+}
+
+
+// challenge 4
+#include <stdio.h>
+
+int main() {
+    int n,i,j;
+    printf("entres le nombre des element  :");
+    scanf("%d",&n);
+    int tab[n];
+    for (i=0;i<n;i++){
+        printf (" entres les elment de tab : ");
+        scanf("%d",&tab[i]);
+    }
+    int max=0;
+        for(i=0;i<n;i++){
+        if (max<tab[i]){
+            max=tab[i];
+        }
+    }    
+    printf (" le max est [%d]",max);
+        
+    printf (" fin de programme");
+    return 0;
+}
+
+// challenge 4
+#include <stdio.h>
+
+int main() {
+    int n,i,j;
+    printf("entres le nombre des element  :");
+    scanf("%d",&n);
+    int tab[n];
+    for (i=0;i<n;i++){
+        printf (" entres les elment de tab : ");
+        scanf("%d",&tab[i]);
+    }
+    int min=tab[0];
+        for(i=1;i<n;i++){
+        if (tab[i]<min){
+            min=tab[i];
+        }
+    }    
+    printf (" le min est [%d]",min);
+        
+    printf ("\nfin de programme");
+    return 0;
+}
+//challenge 1 fct
+#include <stdio.h>
+int Somme(int x,int y){
+    printf ("la somme est %d",x+y);
+    return x+y;
+}
+int main() {
+    int a,b;
+    printf("entrez deux nombre : ");
+    scanf("%d %d",&a,&b);
+    Somme(a,b);
+return 0;
+}
+
+//challenge 2 fct
+#include <stdio.h>
+int produit(int x,int y){
+    printf ("le produit  est %d",x*y);
+    return x*y;
+}
+int main() {
+    int a,b;
+    printf("entrez deux nombre : ");
+    scanf("%d %d",&a,&b);
+    produit(a,b);
+return 0;
+}
+//chalenge 3 fct
+#include <stdio.h>
+int maximum(int x,int y){
+    int max=0;
+    if(max>x){
+       max =x ;
+       printf("le maximum est %d",max);
+    }else{
+        max=y;
+        printf("le maximum est %d",max);
+    }
+}
+int main() {
+    int a,b;
+    printf("entrez deux nombre : ");
+    scanf("%d %d",&a,&b);
+    maximum (a,b);
+return 0;
+}
+
+ //challenge 4 fct
+#include <stdio.h>
+int mimum(int x,int y){
+    int min;
+    if(x<y){
+       min=x;
+       printf("le mimum est %d",min);
+    }else{
+        min=y;
+        printf("le mimum est %d",min);
+    }
+}
+int main() {
+    int a,b;
+    printf("entrez deux nombre : ");
+    scanf("%d %d",&a,&b);
+    mimum(a,b);
+return 0;
+}
+
+
+
+
