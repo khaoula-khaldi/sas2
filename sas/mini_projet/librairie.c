@@ -14,9 +14,9 @@ void AjouteLivre() {
 
     for (int i = n; i < n+nb; i++) {
         printf("Titre : ");
-        scanf("%s", titres[i]);
+        scanf(" %[^\n]s", titres[i]);
         printf("Auteur : ");
-        scanf("%s", auteurs[i]);
+        scanf(" %[^\n]s", auteurs[i]);
         printf("Prix : ");
         scanf("%f", &prix[i]);
         printf("Quantité : ");
