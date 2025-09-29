@@ -23,14 +23,10 @@ int main()
     printf ("veuillerz entre une chaine de caractere : ");
     scanf(" %[^\n]",chaine);
     int i=0;
-    while (chaine[i])i++;
-    
-
-    
+    while (chaine[i])
+    i++;
+    longeur=i;
     printf("voila la longeur de la chaine %d",i);
-
-    
-    
     return 0;
 }
 
@@ -78,7 +74,7 @@ int main()
     scanf(" %[^\n]",chaine1);
     printf ("veuillerz entre autre chaine de caractere : ");
     scanf(" %[^\n]",chaine2);
-    printf("%d",strcmp(chaine1,chaine2));
+
     if(strcmp(chaine1,chaine2)==0){
         printf (" les deux chaine sant egaux ");
     }else{
@@ -190,13 +186,14 @@ int main(){
             "From here to maternity",
             "The girl from Iwo Jima",
         } ;
-    printf ("entre le mots qui tu a rechercher");
+    printf ("entre le mots qui tu a rechercher : ");
     scanf("%s",mots);
-    for(i=0;i<5;i++){
-        if(strstr(tracks[i],mots)){
             trouvee=1;
             enregistrez=i;
-            printf("trouvee la position %d:%s\n",i+1,tracks[i]);
+    printf("trouvee la position %d:%s\n",enregistrez,mots);
+    for(i=0;i<5;i++){
+        if(strstr(tracks[i],mots)){
+            printf("  %s\n %s",mots,tracks[i]);
         }
     }  
     if (!trouvee){

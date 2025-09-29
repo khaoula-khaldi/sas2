@@ -1,3 +1,5 @@
+
+
 #include <stdio.h>
 #include <string.h>
 
@@ -11,12 +13,12 @@ void AjouteLivre() {
     int nb;
     printf("Veuillez entrer le nombre de livres à ajouter : ");
     scanf("%d", &nb);
-
+    
     for (int i = n; i < n+nb; i++) {
         printf("Titre : ");
-        scanf("%s", titres[i]);
+        scanf(" %[^\n]s", titres[i]);
         printf("Auteur : ");
-        scanf("%s", auteurs[i]);
+        scanf(" %[^\n]s", auteurs[i]);
         printf("Prix : ");
         scanf("%f", &prix[i]);
         printf("Quantité : ");
@@ -130,6 +132,7 @@ int main()
         printf("================================\n");
         printf("Votre choix : ");
         scanf("%d", &choix);
+        
 
         switch (choix) {
             case 1: AjouteLivre(); break;
