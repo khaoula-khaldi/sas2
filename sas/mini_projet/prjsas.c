@@ -127,7 +127,7 @@ void Trier_par_nom(){
 
 for (int i = 0; i < count-1 ; i++) {
         for (int j = 0; j < count-i-1 ; j++) {
-            if (strcoll(animal[j].nom, animal[j + 1].nom) > 0) {
+            if (strcmp(animal[j].nom, animal[j + 1].nom) > 0) {
                 temp = animal[j];
                 animal[j] = animal[j + 1];
                 animal[j + 1] = temp;
